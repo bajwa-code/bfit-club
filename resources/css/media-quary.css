@@ -1,0 +1,85 @@
+@media screen and (max-width: 890px) {
+    header {
+        padding: 0 2rem;
+    }
+    .navbar {
+        display: none;
+    }
+    .burger {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+    }
+    .burger span {
+        height: 4px;
+        width: 50px;
+        background-color: #333;
+        display: block;
+        border-radius: 2px;
+    }
+
+    .featured-content h2{
+        font-size: 2.5rem;
+        padding: 0 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 990px) {
+    #featured-tip {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .featured-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto 4rem auto;
+    }
+     #featured-tip .featured-img,
+    .featured-content {
+        width: 100%;
+        padding: 0;
+    }
+    .featured-content p {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #choose-plan h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 898px) {
+    #subscribe {
+        padding: 3rem 1rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #subscribe h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #subscribe h2 {
+        font-size: 1.8rem;
+    }
+    .subscribe-form form {
+        flex-direction: column;
+    }
+    #subscribe input {
+        width: 100%;
+    }
+    #subscribe button {
+        width: 100%;
+    }
+}

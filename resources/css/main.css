@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'Lilita One';
+    src: url(../fonts/lilita-one-v15-latin/lilita-one-v15-latin-regular.woff2) format('woff2');
+}
+
+@font-face
+{
+    font-family: Poppins;
+    src: url(../fonts/poppins-v23-latin/poppins-v23-latin-300.woff2) format('woff2'),
+         url(../fonts/poppins-v23-latin/poppins-v23-latin-300italic.woff2) format('woff2'),
+            url(../fonts/poppins-v23-latin/poppins-v23-latin-regular.woff2) format('woff2'),
+            url(../fonts/poppins-v23-latin/poppins-v23-latin-700.woff2) format('woff2'),
+            url(../fonts/poppins-v23-latin/poppins-v23-latin-800.woff2) format('woff2'),
+            url(../fonts/poppins-v23-latin/poppins-v23-latin-900.woff2) format('woff2');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsla(34, 67%, 95%, 1);
+    
+}
+.top-bar {
+    width: 100%;
+    height: 2rem;
+    background-color: hsla(126, 17%, 35%, 1);
+}
+
+/* Header Section */
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    margin-bottom: 1.2rem;
+    background-color: hsla(34, 67%, 95%, 1);
+    z-index: 100;
+}
+
+header .logo {
+    display: block;
+    width: 180px;
+    height: auto;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .header-link {
+    margin-right: 2.9rem;
+}
+.navbar li a {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    display: block;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.navbar li .header-link{
+    color: hsla(126, 17%, 35%, 1);
+}
+
+.navbar li .header-link:hover {
+    color: hsla(126, 17%, 35%, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar li .join-us-btn {
+    background-color: hsla(20, 51%, 46%, 1);
+    font-size: 1.3rem;
+    padding: 0.5rem 1.6rem;
+    border: none;
+    border-radius: .6rem;
+    color: hsla(34, 67%, 95%, 1); 
+}
+
+.navbar li .join-us-btn:hover {
+    background-color: hsla(20, 51%, 36%, 1);
+    color: hsla(120, 11%, 98%, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Featured Section */
+#featured-tip {
+    position: relative;
+    width: 100%;
+    /* top: 4.5rem; */
+    font-family: Poppins, sans-serif;
+    display: flex;
+    margin-bottom: 5rem;
+    padding-left: 5rem;
+}
+
+.featured-img {
+    display: block;
+    max-width: 500px;
+    min-width: 500px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.featured-content {
+    padding: 1rem 3rem 1rem 0;
+}
+
+.featured-content h2 {
+    font-size: 3rem;
+    color: hsla(126, 17%, 25%, 1);
+    line-height: 1.3;
+    margin: 1rem 0;
+}
+
+.featured-content h3{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: hsla(20, 51%, 46%, 1);
+}
+
+
+.featured-content p {
+    font-size: 1.3rem;
+    color: hsla(126, 17%, 25%, 1);
+}
+
+/* Choose Plan Section */
+
+#choose-plan {
+    margin: 0  5rem 5rem 5rem;
+    font-family: Poppins, sans-serif;
+}
+#choose-plan h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: hsla(126, 17%, 25%, 1);
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    
+}
+
+#choose-plan .plan-option {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    text-align: center;
+}
+.plan-option .card {
+    background-color: hsla(31, 64%, 79%, 1);
+    color: hsla(126, 17%, 25%, 1);
+    /* width: 33.33%; */
+    padding: 1.6rem 1.6rem;
+    border-radius: .6rem;
+    flex: 1 1 auto;
+}
+.plan-option h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.plan-option p {
+    font-size: 1.3rem;
+    /* margin: 1rem 0; */
+}
+
+/* Meal of the Day Section */
+
+#meal-section {
+    font-family: Poppins, sans-serif;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: hsla(28, 49%, 46%, 1);
+    color: #fff;
+    padding: 40px;
+    gap: 40px;
+    /* flex-wrap: wrap; */
+}
+
+#meal-section .meal-image {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+}
+
+#meal-section .meal-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+#meal-section .meal-content {
+  flex: 1 1 50%;
+  max-width: 500px;
+  padding-top: 2rem;
+}
+
+#meal-section .meal-content h3 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+#meal-section .meal-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+#meal-section .meal-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Subscribe Section */
+#subscribe {
+    font-family: Poppins, sans-serif;
+    padding: 3rem 5rem;
+}
+
+#subscribe h2 {
+    font-size: 3rem;
+    color: hsla(126, 17%, 25%, 1);
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#subscribe .subscribe-form {
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.subscribe-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#subscribe input {
+    padding: 1rem;
+    border: none;
+    border-radius: .6rem;
+    font-size: 1.3rem;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: hsla(34, 67%, 85%, 1);
+    flex: 2 0 auto;
+}
+
+#subscribe input:focus {
+    outline: none;
+    border: 1px solid hsla(20, 51%, 46%, 1);
+    background-color: hsla(34, 67%, 95%, 1);
+}
+
+#subscribe button {
+    background-color: hsla(20, 51%, 46%, 1);
+    color: hsla(34, 67%, 95%, 1);
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .6rem;
+    cursor: pointer;
+    flex: 0 1 auto;
+}
+
+#subscribe button:hover {
+    background-color: hsla(20, 51%, 36%, 1);
+    color: hsla(120, 11%, 98%, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer Section */
+
+footer {
+    font-family: Poppins, sans-serif;
+    background-color: hsla(126, 17%, 25%, 1);
+    color: hsla(34, 67%, 95%, 1);
+    padding: 3rem 5rem;
+    text-align: center;
+}
